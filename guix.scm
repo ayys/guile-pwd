@@ -13,7 +13,7 @@
 (define-public guile-pwd
   (package
    (name "guile-pwd")
-   (version "0.1.0")
+   (version "0.1.1")
    (source (origin
             (method git-fetch)
             (uri (git-reference
@@ -22,7 +22,7 @@
             (file-name (git-file-name name version))
             (sha256
              (base32
-              "0k6idvsw2fz4vg0kxqpz0ax3jf9pcrz02y5c9bqilz788bay3pwk"))
+              "08w9dl278l3dgf4qw4nrpcls4kdjcpg6b37c1n2ffssgglypfnrv"))
             (snippet #~(for-each delete-file '("guix.scm")))
             ))
    (build-system guile-build-system)
